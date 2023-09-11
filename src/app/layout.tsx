@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   },
   description:
     'Explore the world of Saeed Bidrang, a seasoned Senior Software Developer, Solutions Architect, and Startup Founder. Discover insights on software engineering, startup challenges, and innovative projects.',
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
+  // alternates: {
+  //   types: {
+  //     'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+  //   },
+  //},
 }
 
 export default function RootLayout({
