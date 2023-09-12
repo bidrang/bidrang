@@ -1,0 +1,46 @@
+import { ArticleLayout } from "@/components/ArticleLayout";
+import Image from "next/image";
+import stackImage from "./react+typescript+vitejs+tailwind.png";
+
+export const article = {
+  author: "Saeed Bidrang",
+  date: "2023-09-12",
+  title:
+    "Building a Cutting-Edge Administration Panel: My Tech Stack Selection",
+  description:
+    "Crafting an admin panel that balances User Experience and Development Experience is key. Discover the stack I chose, including React, TypeScript, ViteJS, and TailwindCSS, for a seamless solution.",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => <ArticleLayout article={article} {...props} />;
+
+I recently got asked to design a structure for an admin panel, a task that inherently involves a delicate balance between User Experience (UX) and Development Experience (DX). Creating an administration panel that is both intuitive and efficient for users while ensuring a smooth and enjoyable development process is no small feat. In this article, I'll share my journey of selecting the ideal stack for this project, highlighting the technologies and tools that allowed me to strike this crucial equilibrium.
+
+<Image src={stackImage} alt="" />
+## The Power of React
+
+React was my first choice for developing this application. Its widespread adoption and a thriving open-source community make it a reliable choice for web development projects of various scales. React's component-based architecture and virtual DOM handling enable developers to create complex user interfaces with ease. Plus, the availability of numerous libraries and packages ensures that answers to most project needs are readily accessible.
+
+## Type Safety with TypeScript
+
+While JavaScript offers great flexibility, I opted for TypeScript as the programming language for this project. TypeScript adds a layer of type safety to JavaScript, reducing the likelihood of runtime errors and enhancing the maintainability of the codebase. This choice aligns with my preference for TypeSafe development, which is essential for preventing potential difficulties down the road.
+
+## Choosing ViteJS for Build and Packaging
+
+To achieve the best build and packaging performance for a Progressive Web App (PWA), I decided to go with ViteJS. While NextJS is a popular choice, its server-side rendering (SSR) capabilities and SEO optimization weren't necessary for this project. ViteJS, on the other hand, provides excellent support for PWAs and delivers a smooth development experience.
+
+## The Efficiency of TailwindCSS
+
+With a plethora of UI component libraries and design systems available, I carefully evaluated options like Material-UI, Ant Design, and Chakra UI. However, I found that the development experience offered by TailwindCSS best suited the project's needs. TailwindCSS streamlines the styling process with its utility-first approach, allowing for rapid development of responsive and visually appealing interfaces.
+
+## Components Library?
+
+While TailwindCSS provided an excellent foundation for styling, I didn't want to reinvent the wheel by developing custom form components from scratch. My research led me to "React Bullet Proof," a project that includes the necessary form components and a solid starting point for the project. Additionally, I benefited from pure HTML components for TailwindCSS available in libraries like TailwindUI and MerakiUI, ensuring a rich variety of UI elements without the need for extensive custom development.
+
+## Conclusion
+
+The stack I chose for building an administration panel leverages the strengths of React, TypeScript, ViteJS, TailwindCSS, and complementary libraries. This combination allows for the development of a responsive, dynamic, and secure application tailored to the specific needs of the project. In the next article, I will delve deeper into the app's structure and how I efficiently managed it to ensure smooth development and maintenance.

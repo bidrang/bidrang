@@ -1,29 +1,29 @@
-import Image, { type ImageProps } from 'next/image'
-import Link from 'next/link'
-import clsx from 'clsx'
+import Image, { type ImageProps } from "next/image";
+import Link from "next/link";
+import clsx from "clsx";
 
-import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
-import { Container } from '@/components/Container'
+import { Button } from "@/components/Button";
+import { Card } from "@/components/Card";
+import { Container } from "@/components/Container";
 import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
-} from '@/components/SocialIcons'
-import logoOmnia from '@/images/logos/omnia.svg'
-import logoPrototype from '@/images/logos/prototype.svg'
-import logoProfile from '@/images/logos/profile.svg'
-import logoRaillogic from '@/images/logos/raillogic.svg'
-import image1 from '@/images/photos/img9.jpeg'
-import image2 from '@/images/photos/img8.jpeg'
-import image3 from '@/images/photos/img2.jpeg'
-import image4 from '@/images/photos/img1.jpeg'
-import image5 from '@/images/photos/img6.jpeg'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
-import { formatDate } from '@/lib/formatDate'
+} from "@/components/SocialIcons";
+import logoOmnia from "@/images/logos/omnia.svg";
+import logoPrototype from "@/images/logos/prototype.svg";
+import logoProfile from "@/images/logos/profile.svg";
+import logoRaillogic from "@/images/logos/raillogic.svg";
+import image1 from "@/images/photos/img9.jpeg";
+import image2 from "@/images/photos/img8.jpeg";
+import image3 from "@/images/photos/img2.jpeg";
+import image4 from "@/images/photos/img1.jpeg";
+import image5 from "@/images/photos/img6.jpeg";
+import { type ArticleWithSlug, getAllArticles } from "@/lib/articles";
+import { formatDate } from "@/lib/formatDate";
 
-function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function MailIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -43,10 +43,10 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         className="stroke-zinc-400 dark:stroke-zinc-500"
       />
     </svg>
-  )
+  );
 }
 
-function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function BriefcaseIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -66,10 +66,10 @@ function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         className="stroke-zinc-400 dark:stroke-zinc-500"
       />
     </svg>
-  )
+  );
 }
 
-function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function ArrowDownIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
       <path
@@ -79,7 +79,7 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 function Article({ article }: { article: ArticleWithSlug }) {
@@ -94,20 +94,20 @@ function Article({ article }: { article: ArticleWithSlug }) {
       <Card.Description>{article.description}</Card.Description>
       <Card.Cta>Read article</Card.Cta>
     </Card>
-  )
+  );
 }
 
 function SocialLink({
   icon: Icon,
   ...props
 }: React.ComponentPropsWithoutRef<typeof Link> & {
-  icon: React.ComponentType<{ className?: string }>
+  icon: React.ComponentType<{ className?: string }>;
 }) {
   return (
     <Link className="group -m-1 p-1" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
-  )
+  );
 }
 
 function Newsletter() {
@@ -136,25 +136,25 @@ function Newsletter() {
         </Button>
       </div>
     </form>
-  )
+  );
 }
 
 interface Role {
-  company: string
-  title: string
-  logo: ImageProps['src']
-  start: string | { label: string; dateTime: string }
-  end: string | { label: string; dateTime: string }
+  company: string;
+  title: string;
+  logo: ImageProps["src"];
+  start: string | { label: string; dateTime: string };
+  end: string | { label: string; dateTime: string };
 }
 
 function Role({ role }: { role: Role }) {
   let startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
+    typeof role.start === "string" ? role.start : role.start.label;
   let startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
+    typeof role.start === "string" ? role.start : role.start.dateTime;
 
-  let endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
+  let endLabel = typeof role.end === "string" ? role.end : role.end.label;
+  let endDate = typeof role.end === "string" ? role.end : role.end.dateTime;
 
   return (
     <li className="flex gap-4">
@@ -175,50 +175,50 @@ function Role({ role }: { role: Role }) {
           className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
           aria-label={`${startLabel} until ${endLabel}`}
         >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
+          <time dateTime={startDate}>{startLabel}</time>{" "}
+          <span aria-hidden="true">—</span>{" "}
           <time dateTime={endDate}>{endLabel}</time>
         </dd>
       </dl>
     </li>
-  )
+  );
 }
 
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Profile',
-      title: 'Founder/CTO',
+      company: "Profile",
+      title: "Founder/CTO",
       logo: logoProfile,
-      start: '2016',
-      end: '2023',
+      start: "2016",
+      end: "2023",
       // {
       //   label: '2023',
       //   dateTime: new Date().getFullYear().toString(),
       // },
     },
     {
-      company: 'Omnia',
-      title: 'Solution Architect/Team Lead',
+      company: "Omnia",
+      title: "Solution Architect/Team Lead",
       logo: logoOmnia,
-      start: '2009',
-      end: '2016',
+      start: "2009",
+      end: "2016",
     },
     {
-      company: 'Prototype',
-      title: 'Senior Software Engineer',
+      company: "Prototype",
+      title: "Senior Software Engineer",
       logo: logoPrototype,
-      start: '2011',
-      end: '2013',
+      start: "2011",
+      end: "2013",
     },
     {
-      company: 'Rail Logic',
-      title: 'Software Engineer',
+      company: "Rail Logic",
+      title: "Software Engineer",
       logo: logoRaillogic,
-      start: '2008',
-      end: '2009',
+      start: "2008",
+      end: "2009",
     },
-  ]
+  ];
 
   return (
     <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
@@ -236,11 +236,17 @@ function Resume() {
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
-  )
+  );
 }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = [
+    "rotate-2",
+    "-rotate-2",
+    "rotate-2",
+    "rotate-2",
+    "-rotate-2",
+  ];
 
   return (
     <div className="mt-16 sm:mt-20">
@@ -249,7 +255,7 @@ function Photos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              "relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl",
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -263,24 +269,25 @@ function Photos() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default async function Home() {
-  let articles = (await getAllArticles()).slice(0, 4)
+  let articles = (await getAllArticles()).slice(0, 4);
 
   return (
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I'm Saeed Bidrang, Senior Software Developer & Enterprise Solutions
-            Architect
+          <h1 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
+            I'm Saeed Bidrang, Senior Software Engineer, Technical Product
+            Manager, and Solutions Architect.
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm a seasoned Senior Software Developer and Solutions Architect,
-            with two decades of experience crafting enterprise solutions and
-            tackling complex challenges in the world of coding.
+          <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
+            Welcome to my digital space! I'm Saeed Bidrang, a Senior Software
+            Engineer, Technical Product Manager, and Solutions Architect. Join
+            me on a journey through tech, software, and innovation. Let's
+            explore, learn, and create together.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -321,5 +328,5 @@ export default async function Home() {
         </div>
       </Container>
     </>
-  )
+  );
 }
