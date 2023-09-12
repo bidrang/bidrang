@@ -1,0 +1,206 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "projects": "",
+    "awards": "Other"
+  },
+  "basics": {
+    "name": "Saeed Bidrang",
+    "email": "saeed.bidrang@gmail.com",
+    "phone": "+989155061400",
+    "website": "https://saeed.connact.me",
+    "location": {
+      "address": "Mashhad, Iran"
+    }
+  },
+  "work": [
+    {
+      "highlights": [
+        "Resumed collaboration with Rail Logic as an Architect for the WHMS PWA App.",
+        "Contributed to the development of the initial architecture and functionality of the application.",
+        "Leveraged the latest React and frontend technologies to build a cutting-edge solution.",
+        "Stayed at the forefront of modern web development practices through this experience."
+      ],
+      "company": "Rail Logic",
+      "position": "Frontend Solution Architect (Remote)",
+      "location": "Missouri, USA",
+      "endDate": "Present",
+      "startDate": "July 2023"
+    },
+    {
+      "highlights": [
+        "Founded Profile, a pioneering online social networking service tailored for professional Iranians.",
+        "Defined the product's vision, goals, and key performance indicators (KPIs) while actively participating in the design and technical decision-making processes.",
+        "Led a team of up to 25 staff members during the project's peak.",
+        "Efficiently orchestrated the transition from AngularJS and monolithic ASP.NET MVC to a modern, scalable PWA React and Golang architecture.",
+        "Facilitated a comprehensive system redesign, resulting in the creation of 24 stateless services behind a GraphQL gateway, supported by various databases and Kafka as a service bus.",
+        "Transformed the platform, achieving a remarkable 75% reduction in server response times and a 40% increase in concurrent user capacity within the same infrastructure.",
+        "Notably, these enhancements correlated with a 50% reduction in page load times and a 30% boost in user engagement, delivering an enhanced user experience."
+      ],
+      "company": "Profile Social Network",
+      "position": "Founder/CTO",
+      "location": "Mashhad, Iran",
+      "endDate": "April 2023",
+      "startDate": "August 2016"
+    },
+    {
+      "highlights": [
+        "Joined Omnia in 2009 as a Senior Web Developer freelancer, marking the start of a successful collaboration.",
+        "Co-founded Profile Digital Agency in Iran after three years, establishing a partnership with Omnia.",
+        "Led the development of 50+ projects for prominent MENA companies, including du Telecom, Emaar, ADNEC, Mubadala, and QDB.",
+        "mplemented Agile methodologies, resulting in a 20% increase in team efficiency and faster project delivery.",
+        "Drove the successful development of ALJLeague's high-traffic website, serving as a crucial client with a significant user base, ensuring top-notch performance and user experience.",
+        "Designed and managed the development of bespoke content management systems using ASP.NET MVC, AngularJS, and MongoDB replica sets, tailored to precise client requirements."
+      ],
+      "company": "OMNIA",
+      "location": "Dubai, UAE",
+      "position": "Solution Architect/Team Lead (Hybrid)",
+      "startDate": "June 2009",
+      "endDate": "September 2016"
+    },
+    {
+      "highlights": [
+        "Joined Prototype, a Digital Strategy & Transformation Agency, initially as a freelancer.",
+        "Since founding Profile Digital, collaborated with Prototype on multiple web and app projects, enhancing their digital portfolio.",
+        "Developed 3 Windows phone apps and spearheaded the creation of 3 management systems for Microsoft Middle East.",
+        "Led the development of over 10 projects, including widgets for the Gulf News website, a Groupon-like platform, and websites for prominent clients like Mastercard Middle East, Montgomerie, and Etisalat."
+      ],
+      "company": "Prototype",
+      "position": "Senior Software Engineer (Remote)",
+      "location": "Dubai, UAE",
+      "startDate": "January 2011",
+      "endDate": "September 2013"
+    },
+    {
+      "highlights": [
+        "Contributed to the development of WHMS (Monitoring System for BNSF Railways) as a Senior Developer.",
+        "Played a pivotal role in designing the project's frontend structure for optimal usability.",
+        "Implemented a range of tools and reports to serve varying user needs and levels within the system.",
+        "Gained valuable expertise in frontend development, emphasizing user-centric solutions."
+      ],
+      "company": "Rail Logic",
+      "position": "Software Developer (Remote)",
+      "location": "Missouri, USA",
+      "endDate": "June 2009",
+      "startDate": "June 2007"
+    },
+    {
+      "company": "Roya Pardaz Pars",
+      "location": "Mashhad, Iran",
+      "position": "Software Developer / Co-founder",
+      "website": "",
+      "startDate": "May 2005",
+      "endDate": "June 2007",
+      "highlights": [
+        "Successfully delivered five substantial C# and .Net Forms-based projects for prominent Iranian corporations.",
+        "Designed and directed the development of an appointment system for DigitSign, a Netherlands-based company"
+      ]
+    },
+    {
+      "company": "Dade Pardazan Hashtom",
+      "location": "Mashhad, Iran",
+      "position": "Junior Developer",
+      "website": "",
+      "startDate": "December 2002",
+      "endDate": "April 2005",
+      "highlights": [
+        "Started career as a developer, gaining foundational skills in software development.",
+        "Played a key role in developing a MIS system using ASP.NET, contributing to the company's technical capabilities."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Solution Architecture",
+        "Software Development",
+        "Design Patterns",
+        "Microservices",
+        "Clean Code"
+      ],
+      "name": "Technical Skills"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Frontend",
+        "Backend ",
+        "Mobile Apps",
+        "Web Apps",
+        "API Design",
+        "GraphQL",
+        "REST"
+      ],
+      "name": "Development"
+    },
+    {
+      "level": "",
+      "keywords": ["C#", "Golang", "JavaScript", "TypeScript"],
+      "name": "Languages"
+    },
+    {
+      "level": "",
+      "keywords": ["React", "NextJS", "PWA", "HTML/CSS", "Tailwind"],
+      "name": "Web Technologies"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "MongoDB",
+        "PostgreSQL",
+        "Neo4J",
+        "ElasticSearch",
+        "Redis",
+        "SQL Server"
+      ],
+      "name": "Databases"
+    },
+    {
+      "level": "",
+      "keywords": ["Sitefinity", "OrchardCMS", "Umbraco", "Sitecore", "Strapi"],
+      "name": "CMS"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Team Building",
+        "Team Leadership",
+        "Mentorship",
+        "Strategic Planning",
+        "Agile",
+        "Scrum",
+        "Kanban"
+      ],
+      "name": "Team Management"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Business Analysis",
+        "Product Strategy",
+        "Market Research",
+        "Roadmap Planning"
+      ],
+      "name": "Product Management"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Birjand University of Technology",
+      "location": "Birjand, Iran",
+      "studyType": "Bachelors",
+      "startDate": "2006",
+      "endDate": "2009",
+      "area": "Software Engineering"
+    },
+    {
+      "institution": " Mashhad Technical University (Montazeri)",
+      "location": "Mashhad, Iran",
+      "studyType": "Associate Degree",
+      "area": "Computer Sciense",
+      "startDate": "2001",
+      "endDate": "2004"
+    }
+  ]
+}
