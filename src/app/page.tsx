@@ -284,15 +284,14 @@ export default async function Home() {
     <>
       <Container className="mt-9">
         <div className="max-w-2xl">
-          <h1 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl">
-            I'm Saeed Bidrang, Senior Software Engineer, Technical Product
-            Manager, and Solutions Architect.
+          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+            I'm Saeed Bidrang, a Software Manager and Solutions Architect.
           </h1>
           <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
-            Welcome to my digital space! I'm Saeed Bidrang, a Senior Software
-            Engineer, Technical Product Manager, and Solutions Architect. Join
-            me on a journey through tech, software, and innovation. Let's
-            explore, learn, and create together.
+            Welcome to my website! I'm Saeed Bidrang, a Software Engineer,
+            Product Manager, and Solutions Architect. Come along on a journey
+            through technology, software, and innovation. Let's explore, learn,
+            and create together.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
