@@ -1,0 +1,74 @@
+import { ArticleLayout } from "@/components/ArticleLayout";
+
+export const article = {
+  author: "Saeed Bidrang",
+  date: "2023-09-16",
+  title:
+    "Architecting a Flexible Administration Panel: A Deep Dive into the Structure",
+  description:
+    "Explore the architecture behind our adaptable administration panel. Learn how Domain-Driven Design, CQRS, ReactQuery, TypeScript, Axios, and React Router create a flexible, organized, and efficient structure.",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => <ArticleLayout article={article} {...props} />;
+
+Building a robust administration panel involves more than just selecting the right stack. It's equally important to design a solid project structure that ensures scalability, maintainability, and a seamless development experience. In this article, I'll take you on a tour of the structure I adopted for my Administrtion Panel React application, showcasing how it embraces Domain Driven Design, CQRS principles, and leverages technologies like ReactQuery, TypeScript, Axios, and React Router.
+
+```c
+- src/
+  - features/
+    - Auth/
+    - Common/
+    - Feature1/
+      - apis/
+        - queries/
+        - mutations/
+      - components/
+      - screens/
+      - types/
+    - Feature2/
+      - apis/
+      - components/
+      - screens/
+      - types/
+  - layouts/
+  - routes/
+    - protected.ts
+    - public.ts
+```
+
+## Embracing Domain Driven Design
+
+To ensure clarity and maintainability, I organized my project using the Domain Driven Design (DDD) approach. The cornerstone of this structure is the "features" folder, where each feature of the application resides. This separation allows for a clear distinction of responsibilities and keeps related code together.
+
+### Feature-Centric Organization
+
+Within the "features" folder, each feature has its own sub-folder, housing screens, components, types, and APIs. This approach promotes a highly modular architecture, making it easier to add, modify, or remove features without causing unintended side effects.
+
+## CQRS for Effective API Management
+
+In the "APIs" folder, I adopted the Command Query Responsibility Segregation (CQRS) pattern. Each feature has its file containing different queries and mutations, promoting separation of concerns and maintainable API management.
+
+## Leveraging ReactQuery for Data Handling
+
+ReactQuery plays a pivotal role in this architecture. I created a custom React hook for each action, making data management seamless and efficient. ReactQuery's built-in caching and data synchronization capabilities ensure that data flows smoothly between the client and server.
+
+## TypeScript and Axios for Robustness
+
+The entire project is developed using TypeScript, adding a layer of type safety that prevents common runtime errors. For API calls, I rely on Axios, a versatile and widely adopted HTTP client, ensuring robust and reliable communication with the server.
+
+## Navigating with React Router
+
+For seamless navigation within the application, React Router comes into play. The "routes" folder in the project root contains different route configurations for both protected and public routes, each with its layout. This ensures a clean and organized routing structure.
+
+## Embracing Flexibility and Readability
+
+This architectural approach has created a flexible and highly readable codebase. It allows for effortless feature additions, smooth collaboration among team members, and a pleasant development experience.
+
+In upcoming articles, we'll dive deeper into project details, exploring forms, lists, detail pages, and the tools that empower us to ensure safe and easy future development.
+
+Stay tuned for more insights into crafting an efficient and extensible React application!
