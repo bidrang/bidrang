@@ -1,22 +1,20 @@
-### 👋 Welcome to my GitHub!
+# Saeed's GitHub Profile
 
-I'm a seasoned software engineer with 20+ years of experience in the IT industry, specializing in full-stack development, scalable solutions, and product management. I've led diverse teams, transformed ideas into scalable solutions, and collaborated on projects for renowned brands in the MENA region.
+👋 Hello! I'm Saeed, a seasoned Senior Software Engineer and Solution Architect with over 20 years of experience in the IT industry. My expertise lies in software engineering, leading technical teams, and designing scalable solutions.
 
-🚀 Highlights:
-- 💼 Former Founder/CTO of Profile Social Network
-- 🌐 Expertise in Golang, ASP.NET, React, and more
-- 📈 Proven track record in scalable solutions design
-- 🎯 Passionate about product innovation and user engagement
+## 🔧 Skills
 
-🛠️ Tech Stack:
-- Frontend: React, ReactNative
-- Backend: Golang, ASP.NET
-- Databases: MongoDB, PostgreSQL, ElasticSearch, Redis, SQLServer
-- CMS: Sitefinity, OrchardCMS, Umbraco, Sitecore
-- Tools: Agile, AWS, Azure
+- **Technical:** ASP.NET (MVC, Core), Golang, Agile Methodologies, SaaS, Clean Architecture
+- **Frontend:** ReactJS, NextJS, React Native
+- **Databases:** SQL Server, MongoDB, MySQL, Elastic Search
+- **Cloud:** Azure, AWS, Kubernetes
 
-🔗 Let's connect:
-Feel free to explore my projects and connect with me! I'm always open to collaborations and new challenges. Let's build something amazing together.
+## 📚 Blog
 
-📧 Contact:
-🌐 LinkedIn: linkedin.com/in/bidrang
+I frequently share my insights and experiences on my [blog](https://saeed.connact.me), covering topics such as software architecture, team leadership, and more.
+
+## 📫 Contact
+
+Feel free to reach out to me through [LinkedIn](https://www.linkedin.com/in/bidrang) or [Twitter](https://twitter.com/bidrang). I'd love to connect and discuss exciting opportunities!
+
+Let's build something amazing together.
