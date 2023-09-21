@@ -16,7 +16,7 @@ export const metadata = {
 
 export default (props) => <ArticleLayout article={article} {...props} />;
 
-Building a robust administration panel involves more than just selecting the right stack. It's equally important to design a solid project structure that ensures scalability, maintainability, and a seamless development experience. In this article, I'll take you on a tour of the structure I adopted for my Administrtion Panel React application, showcasing how it embraces Domain Driven Design, CQRS principles, and leverages technologies like ReactQuery, TypeScript, Axios, and React Router.
+Building a robust administration panel involves more than just selecting the right stack. It's equally important to design a solid project structure that ensures scalability, maintainability, and a seamless development experience. In this article, I'll take you on a tour of the structure I adopted for my Administrtion Panel React application, showcasing how it embraces Domain Driven Design, CQRS principles, and leverages technologies like [ReactQuery](https://tanstack.com/query/latest/), TypeScript, [Axios](https://axios-http.com/), and [React Router](https://reactrouter.com/).
 
 ```c
 - src/
@@ -55,15 +55,15 @@ In the "APIs" folder, I adopted the Command Query Responsibility Segregation (CQ
 
 ## Leveraging ReactQuery for Data Handling
 
-ReactQuery plays a pivotal role in this architecture. I created a custom React hook for each action, making data management seamless and efficient. ReactQuery's built-in caching and data synchronization capabilities ensure that data flows smoothly between the client and server.
+[ReactQuery](https://tanstack.com/query/latest/) plays a pivotal role in this architecture. I created a custom React hook for each action, making data management seamless and efficient. ReactQuery's built-in caching and data synchronization capabilities ensure that data flows smoothly between the client and server.
 
 ## TypeScript and Axios for Robustness
 
-The entire project is developed using TypeScript, adding a layer of type safety that prevents common runtime errors. For API calls, I rely on Axios, a versatile and widely adopted HTTP client, ensuring robust and reliable communication with the server.
+The entire project is developed using TypeScript, adding a layer of type safety that prevents common runtime errors. For API calls, I rely on [Axios](https://axios-http.com/), a versatile and widely adopted HTTP client, ensuring robust and reliable communication with the server.
 
 ## Navigating with React Router
 
-For seamless navigation within the application, React Router comes into play. The "routes" folder in the project root contains different route configurations for both protected and public routes, each with its layout. This ensures a clean and organized routing structure.
+For seamless navigation within the application, [React Router](https://reactrouter.com/) comes into play. The "routes" folder in the project root contains different route configurations for both protected and public routes, each with its layout. This ensures a clean and organized routing structure.
 
 ## Embracing Flexibility and Readability
 
