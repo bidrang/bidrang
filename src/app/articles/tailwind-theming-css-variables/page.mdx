@@ -1,0 +1,52 @@
+import { ArticleLayout } from "@/components/ArticleLayout";
+
+export const article = {
+  author: "Saeed Bidrang",
+  date: "2023-10-02",
+  title: "Tailwind CSS: A Versatile Styling Tool, But Why Ignore the Colors?",
+  description:
+    "Discover the vibrant world of Tailwind CSS colors and why, in specific scenarios like dark mode or custom theming, harnessing CSS variables and the HSL color model can enhance flexibility without forsaking Tailwind's utility classes.",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => <ArticleLayout article={article} {...props} />;
+
+Tailwind CSS is renowned for its flexibility and robust set of utility classes, especially when it comes to colors. In this article, we'll explore the benefits of Tailwind's color utilities while also considering why it might be advantageous to bypass Tailwind's color palette and opt for custom theming using CSS variables.
+
+## The Marvelous World of Tailwind Colors
+
+Tailwind CSS offers an extensive and vibrant color palette, making it a go-to choice for quickly adding color to your web projects. With classes like `bg-blue-500` or `text-red-600`, you can effortlessly apply a wide range of colors to your elements. This palette provides excellent out-of-the-box styling options and simplifies the process of creating visually appealing interfaces.
+
+## The Challenge of Custom Theming
+
+While Tailwind's default color options are fantastic, there are situations where custom theming becomes necessary. For example, when you need to support dark mode or when your project demands a unique color scheme, relying solely on Tailwind's color classes may not suffice.
+
+### The Power of CSS Variables
+
+One compelling reason to consider custom theming is the use of CSS variables (also known as custom properties). Defining primary, secondary, and other essential colors as CSS variables allows for dynamic theming without altering your HTML markup. CSS variables grant you the flexibility to change the color scheme across your entire project by merely adjusting a few lines of CSS.
+
+### Embracing HSL Colors for Flexibility
+
+When defining custom colors, consider using the HSL (Hue, Saturation, Lightness) color model. HSL provides greater control over color shades and allows you to generate variations programmatically. By employing `calc` with HSL values, you can dynamically adjust lightness, saturation, or hue, creating harmonious color variations with ease.
+
+```css
+:root {
+  --primary-color: hsl(210, 80%, 50%);
+  --secondary-color: hsl(30, 90%, 60%);
+}
+
+.dark-mode {
+  --primary-color: hsl(210, 80%, 30%);
+  --secondary-color: hsl(30, 90%, 30%);
+}
+```
+
+## Tailwind and Custom Theming: A Powerful Duo
+
+It's important to note that embracing custom theming with CSS variables doesn't mean abandoning Tailwind CSS altogether. In fact, combining Tailwind's utility classes for layout and spacing with custom theming for colors provides the best of both worlds. Tailwind continues to shine in its strengths while custom theming enhances the project's adaptability and theming capabilities.
+
+In conclusion, Tailwind CSS offers an impressive array of colors, making it a versatile choice for most projects. However, when custom theming or dynamic color schemes are on the horizon, utilizing CSS variables and HSL colors can significantly enhance your project's flexibility and maintainability. The synergy between Tailwind's utility classes and custom theming creates a potent styling strategy for modern web development.
